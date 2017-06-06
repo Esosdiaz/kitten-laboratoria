@@ -1,0 +1,36 @@
+.gatito-flex{ /*Establece la imagen de fondo inicial*/
+	background-image: url("../images/dawn.png"); 
+	height: 100vh; /*le da altura al div que tiene al gatito*/
+}
+img{ /*establece los parámetros básicos de las imagenes*/
+	display: block;
+	margin: 0 auto;
+}
+.gatito-flex{/*da los parámetros flex al contenedor*/
+	display: flex; /*los transforma en un contenedor flex*/
+	justify-content: center; /*alinea los elementos de forma centrada*/
+}
+.gatito{ 
+	align-self: flex-end;/*manda la foto al final, y centrada por el justify-content*/
+}
+
+/*media queries*/
+@media (min-width: 750px){/*primer caso*/
+	/*[class*="col-"]{ va a modificar todas las clases con ese nombre*/
+		/*width: 100%; mantiene la imagen responsiva
+	}*/
+	.gatito-flex{
+		width: 100%;
+		background-image: url("../images/maxresdefault.jpg")/*cambiará la imagen de fondo*/
+	}
+}
+@media (min-width: 450px) and (max-width: 749px){/*segundo caso, establece dos medidas, para dar un rango*/
+	/*[class*="col-"]{/*va a modificar todas las clases con ese nombre*/
+		/*width: 100%; mantiene la imagen responsiva
+	}*/
+	.gatito-flex{
+		height: 100vh;
+		background-image: url("../images/landscape.jpg"); /*cambia la imagen de fondo*/
+	}
+}
+

@@ -3,16 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kitten-Laboratoria</title>
-	<link rel="stylesheet" type="text/css" href="asset/css/grilla.css">
-	<link rel="stylesheet" type="text/css" href="asset/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/grilla.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	<title></title>
 </head>
 <body>
-	<div class="container-gatito"><!--div que envuelve las fotos completas-->
-		<picture> <!-- no sé porque esto se hace así-->
-			<source media="(min-width: 650px)"
+	<div class="gatito-flex"><!--div que envuelve las fotos completas, para dar los parámetros flex-->
+		<picture class="gatito"> <!-- estas líneas cambian la imagen del gatito. El min-width establecido es lo que hace cada opción-->
+			<source media="(min-width: 750px)"
 			srcset="assets/images/kitten-large.png">
-			<source media="(min-width: 465px)"
+			<source media="(min-width: 450px)"
 			srcset="assets/images/kitten-medium.png">
 			<img src="assets/images/kitten-small.png">
 		</picture>
