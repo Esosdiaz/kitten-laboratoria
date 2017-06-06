@@ -30,7 +30,7 @@ img{ /*establece los parámetros básicos de las imagenes*/
 	}*/
 	.gatito-flex{
 		height: 100vh;
-		background-image: url("../images/landscape.jpg"); /*cambia la imagen de fondo*/
+		background-image: url("../images/Landscape.jpg"); /*cambia la imagen de fondo*/
 	}
 }
 
